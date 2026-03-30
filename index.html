@@ -10,14 +10,14 @@
             color: black;
             margin-right: 20px;
         }
-        div {
+       .business {
             background-color: #2F303A;
             width: 1600px;
             height: 600px;
             top: 80px;
             text-align: center;
         }
-        div button {
+        .business button {
             background-color: #2196F3;
             width:216px;
             height: 50px;
@@ -25,14 +25,14 @@
             left: 692px;
             Radius: 4px;
         }
-        div h3 {
+        .business h3 {
             color: white;
          
         }
       
         .sec1 {
             display: flex;
-       text-align: center;
+           justify-content: space-around;
             width: 1,170px;
             height: 386px;
             top: 966px;
@@ -62,14 +62,14 @@
             height: 98px;
             top: 774px;
             left: 215px;
-            justify-content: space-around;
+          
         }
         .block2 {
              width: 270px;
             height: 98px;
             top: 774px;
             left: 215px;
-            justify-content: space-around;
+           
         }
         .block3 {
              width: 270px;
@@ -87,7 +87,7 @@
         }
         .sec5 {
             display: flex;
-            flex-wrap: wrap;
+            justify-content: space-between;
             width: 1,170px;
             height: 386px;
             top: 966px;
@@ -96,7 +96,7 @@
 
          .sec2 {
             display: flex;
-      
+            justify-content: space-between;
                
             width: 1,170px;
             height: 386px;
@@ -124,6 +124,15 @@
          .a2 {
             color:#2196F3; 
          }
+     .div {
+        display: flex;
+        justify-content: center;
+     }
+       .box {
+        display: flex;
+        justify-content: center;
+        }
+          
     </style>
 </head>
 
@@ -136,41 +145,76 @@
         <a href="mailto:info@devstudio.com" class="a2">info@devstudio.com </a>
         <a href="tel:+380961111111">+38 096 111 11 11</a>
     </header>
-    <div>
+    <div class="business">
         <h3>Ефективні рішення для вашого бізнесу</h3>
         <button>Замовити послугу</button>
     </div>
     <main>
         <section class="sec5">
- <h3 class="block1">УВАГА ДО ДЕТАЛЕЙ</h3>
+          <article class="details">
+             <h3 class="block1">УВАГА ДО ДЕТАЛЕЙ</h3>
         <p class="block1">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+          </article>
+          <article class="punctuality">
         <h2 class="block2">ПУНКТУАЛЬНІСТЬ</h2>
         <p class="block2">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+            </article>
+            <article class="planning">
         <h3 class="block3">ПЛАНУВАННЯ</h3>
         <p class="block3">Так samo консультація з широким активом значною мірою зумовлює.</p>
+        </article>
+        <article class="technologies">
         <h3 class="block4">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
         <p class="block4">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+        </article>
         </section>
        <section class="sec1">
-   <h2>Чим ми займаємося</h2>
-   <img src="./images/comp.jpg" alt="comp" class="img1">
-   <img src="./images/telephone.jpg" alt="telephone"class="img2">
-   <img src="./images/tablet.jpg" alt="tablet"class="img3">
-       </section>
+        <div class="div">
+ <h2>Чим ми займаємося</h2>
+        </div>
+  
+  
+ <article>
+<img src="./images/comp.jpg" alt="comp" class="img1">
+   </article>
+   <article>
+  <img src="./images/telephone.jpg" alt="telephone"class="img2">
+   </article>
+      <article>
+         <img src="./images/tablet.jpg" alt="tablet"class="img3">
+      </article>
+   
+  
+       
+            </section>
        <section class="sec2">
-        <h2>Наша команда</h2>
-        <img src="./images/man2.jpg" alt="man2">
+        <div class="box">
+            <h2>Наша команда</h2>
+        </div>
+        
+        
+ <article>
+             <img src="./images/man2.jpg" alt="man2">
        <h3>Ігор Дем'яненко</h3>
        <p>Product Designer</p>
-       <img src="./images/women.jpg" alt="women">
+        </article>
+       <article>
+<img src="./images/women.jpg" alt="women">
        <h3>Ольга Рєпіна</h3>
        <p>Frontend Developer</p>
+       </article>
+       <article>
        <img src="./images/boy.jpg" alt="boy">
        <h3>Микола Тарасов</h3>
        <p>Marketing</p>
+       </article>
+       <article>
        <img src="./images/man.jpg" alt="man">
        <h3>Михайло Єрмаков</h3>
        <p>UI Designer</p>
+         </article>
+        
+       
        </section>
 
     </main>
