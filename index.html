@@ -116,7 +116,7 @@
             width: 1,600px;
             height: 252px;
             top: 2094px;
-
+              animation: colorChange 5s infinite;
          }
          p {
             color: #757575;
@@ -132,7 +132,23 @@
         display: flex;
         justify-content: center;
         }
-          
+        @keyframes colorChange {
+            0% {
+                background-color: teal;
+            }
+            25% {
+                background-color: purple;
+            }
+            50% {
+                background-color: crimson;
+            }
+            75% {
+                background-color: orange;
+            }
+            100% {
+                background-color: teal;
+            }
+        }
     </style>
 </head>
 
