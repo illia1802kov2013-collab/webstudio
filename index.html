@@ -4,152 +4,237 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        a {
-            text-decoration: none;
-            color: black;
-            margin-right: 20px;
-        }
-       .business {
-            background-color: #2F303A;
-            width: 1600px;
-            height: 600px;
-            top: 80px;
-            text-align: center;
-        }
-        .business button {
-            background-color: #2196F3;
-            width:216px;
-            height: 50px;
-            top: 430px;
-            left: 692px;
-            Radius: 4px;
-        }
-        .business h3 {
-            color: white;
-         
-        }
-      
-        .sec1 {
-            display: flex;
-           justify-content: space-around;
-            width: 1,170px;
-            height: 386px;
-            top: 966px;
-            left: 215px;
-        }
-        
-        .img1 {
-            width: 370px;
-            height: 294px;
-            top: 1058px;
-            left: 215px;
-        }
-        .img2 {
-            width: 370px;
-            height: 294px;
-            top: 1058px;
-            left: 595px;
-        }
-        .img3 {
-            width: 370px;
-            height: 294px;
-            top: 1058px;
-            left: 975px;
-        }
-        .block1 {
-          width: 270px;
-            height: 98px;
-            top: 774px;
-            left: 215px;
-          
-        }
-        .block2 {
-             width: 270px;
-            height: 98px;
-            top: 774px;
-            left: 215px;
-           
-        }
-        .block3 {
-             width: 270px;
-            height: 98px;
-            top: 774px;
-            left: 215px;
-            
-        }
-        .block4 {
-             width: 270px;
-            height: 98px;
-            top: 774px;
-            left: 215px;
-           
-        }
-        .sec5 {
-            display: flex;
-            justify-content: space-between;
-            width: 1,170px;
-            height: 386px;
-            top: 966px;
-            left: 215px;
-         }
+   <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-         .sec2 {
-            display: flex;
-            justify-content: space-between;
-               
-            width: 1,170px;
-            height: 386px;
-            top: 966px;
-            left: 215px;
-          
-        }
-       
-         .sec2 img {
-             width: 370px;
-             height: 294px;
-             top: 1058px;
-             left: 215px;
-         }
-         footer {
-            background-color: #2F303A;
-            width: 1,600px;
-            height: 252px;
-            top: 2094px;
-              animation: colorChange 5s infinite;
-         }
-         p {
-            color: #757575;
-         }
-         .a2 {
-            color:#2196F3; 
-         }
-     .div {
-        display: flex;
-        justify-content: center;
-     }
-       .box {
-        display: flex;
-        justify-content: center;
-        }
-        @keyframes colorChange {
-            0% {
-                background-color: teal;
-            }
-            25% {
-                background-color: purple;
-            }
-            50% {
-                background-color: crimson;
-            }
-            75% {
-                background-color: orange;
-            }
-            100% {
-                background-color: teal;
-            }
-        }
-    </style>
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+    margin-right:20px;
+    transition:0.3s;
+}
+
+a:hover{
+    color:#2196F3;
+}
+
+/* ================= HERO ================= */
+
+.business{
+    width:1600px;
+    height:600px;
+    text-align:center;
+
+    background:
+    linear-gradient(
+        rgba(47,48,58,.65),
+        rgba(47,48,58,.65)
+    ),
+    radial-gradient(circle at center,#4f5b6b,#2F303A);
+}
+
+.business h3{
+    color:white;
+    padding-top:180px;
+}
+
+.business button{
+    background:linear-gradient(90deg,#2196F3,#42A5F5);
+    color:white;
+    border:none;
+    width:216px;
+    height:50px;
+    border-radius:4px;
+    cursor:pointer;
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(33,150,243,.4);
+}
+
+.business button:hover{
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 28px rgba(33,150,243,.6);
+}
+
+/* ================= FEATURES ================= */
+
+.sec5{
+    display:flex;
+    justify-content:space-between;
+    width:1170px;
+    margin:auto;
+    gap:30px;
+}
+
+.block1,
+.block2,
+.block3,
+.block4{
+    width:270px;
+    height:98px;
+    padding:20px;
+    background:white;
+    border-radius:8px;
+
+    box-shadow:
+    0 4px 10px rgba(0,0,0,.08),
+    0 8px 20px rgba(0,0,0,.12);
+
+    transition:.3s;
+}
+
+.block1:hover,
+.block2:hover,
+.block3:hover,
+.block4:hover{
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.18);
+}
+
+/* ================= IMAGES ================= */
+
+.sec1{
+    display:flex;
+    justify-content:space-around;
+    width:1170px;
+    margin:auto;
+    gap:30px;
+}
+
+.img1,
+.img2,
+.img3{
+    width:370px;
+    height:294px;
+    border-radius:10px;
+
+    box-shadow:
+    0 6px 15px rgba(0,0,0,.18);
+
+    transition:.3s;
+}
+
+.img1:hover,
+.img2:hover,
+.img3:hover{
+    transform:scale(1.03);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.25);
+}
+
+/* ================= TEAM ================= */
+
+.sec2{
+    display:flex;
+    justify-content:space-between;
+    width:1170px;
+    margin:auto;
+    gap:30px;
+
+    background:linear-gradient(
+        180deg,
+        #F5F4FA 0%,
+        #FFFFFF 100%
+    );
+
+    padding:40px;
+}
+
+.sec2 img{
+    width:370px;
+    height:294px;
+    border-radius:10px;
+
+    box-shadow:
+    0 6px 18px rgba(0,0,0,.15);
+
+    transition:.3s;
+}
+
+.sec2 img:hover{
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 12px 28px rgba(0,0,0,.25);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    width:1600px;
+    height:252px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #2F303A,
+        #43454F
+    );
+
+    animation:colorChange 5s infinite;
+}
+
+p{
+    color:#757575;
+}
+
+.a2{
+    color:#2196F3;
+}
+
+.div{
+    display:flex;
+    justify-content:center;
+}
+
+.box{
+    display:flex;
+    justify-content:center;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes colorChange{
+
+0%{
+background:
+linear-gradient(135deg,#00695C,#009688);
+}
+
+25%{
+background:
+linear-gradient(135deg,#6A1B9A,#8E24AA);
+}
+
+50%{
+background:
+linear-gradient(135deg,#B71C1C,#E53935);
+}
+
+75%{
+background:
+linear-gradient(135deg,#EF6C00,#FFA726);
+}
+
+100%{
+background:
+linear-gradient(135deg,#00695C,#009688);
+}
+
+}
+</style>
 </head>
 
 <body>
